@@ -18,6 +18,7 @@ public class MyString {
          * System.out.println(remove("meeweott","committee"));
          */
         //// Put your other tests here.
+        System.out.println(spacedString("a"));
     }
 
     /**
@@ -75,6 +76,7 @@ public class MyString {
      */
     public static String spacedString(String str) {
         String new_str = "";
+        if (str ==""){return new_str;}
         for (int i = 0; i < str.length() - 1; i++) {
             new_str += str.charAt(i) + " ";
         }
