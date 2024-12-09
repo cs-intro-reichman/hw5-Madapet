@@ -18,7 +18,7 @@ public class MyString {
          * System.out.println(remove("meeweott","committee"));
          */
         //// Put your other tests here.
-        System.out.println(spacedString("a"));
+        System.out.println(remove("committee", "meet"));
     }
 
     /**
@@ -113,7 +113,7 @@ public class MyString {
      * @param str2 - a string
      * @return a string consisting of str1 minus all the characters of str2
      */
-    public static String remove(String str1, String str2) {
+    public static String remove(String str2, String str1) {
         for (int i = 0; i < str1.length(); i++) {
             for (int j = 0; j < str2.length(); j++) {
                 if (str1.charAt(i) == str2.charAt(j)) {
