@@ -57,7 +57,7 @@ public class MyString {
             return true;
         }
         for (int i = 0; i < str1.length(); i++) {
-            if (countChar(str1, str1.charAt(i)) != countChar(str2, str1.charAt(i))) {
+            if (countChar(str1, str1.charAt(i)) > countChar(str2, str1.charAt(i))) {
                 return false;
             }
         }
@@ -76,7 +76,9 @@ public class MyString {
      */
     public static String spacedString(String str) {
         String new_str = "";
-        if (str ==""){return new_str;}
+        if (str == "") {
+            return new_str;
+        }
         for (int i = 0; i < str.length() - 1; i++) {
             new_str += str.charAt(i) + " ";
         }
